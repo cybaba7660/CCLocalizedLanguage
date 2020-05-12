@@ -32,6 +32,10 @@ NSString * const kLocalizedLanguageDidChangedNotification = @"kLocalizedLanguage
     }
     [[NSUserDefaults standardUserDefaults] setObject:language forKey:kLastUsedLanguage];
     [[NSUserDefaults standardUserDefaults] setObject:language forKey:kAppleLanguages];
-    return [[NSUserDefaults standardUserDefaults] synchronize];
+    BOOL rs = [[NSUserDefaults standardUserDefaults] synchronize];
+    if (rs) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLocalizedLanguageDidChangedNotification object:language];
+    }
+    return rs;
 }
 @end
