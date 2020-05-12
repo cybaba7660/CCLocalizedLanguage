@@ -67,6 +67,7 @@
     indicator.frame = CGRectMake((screenWidth - 100) / 2, (screenHeight - 100) / 2, 100, 100);
     indicator.color = UIColor.whiteColor;
     indicator.backgroundColor = UIColor.grayColor;
+    indicator.layer.cornerRadius = indicator.bounds.size.height / 10;
     [self.view addSubview:indicator];
 }
 
