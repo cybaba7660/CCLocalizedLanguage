@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  CCLocalizedLanguage
+
+  Created by Chenyi on 2020/5/12.
+  Copyright © 2020 Chenyi. All rights reserved.
+*/
+
+CFBundleDisplayName = "언어 현지 화";

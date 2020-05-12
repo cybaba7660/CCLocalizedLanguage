@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  CCLocalizedLanguage
+
+  Created by Chenyi on 2020/5/12.
+  Copyright © 2020 Chenyi. All rights reserved.
+*/
+
+//当以中文作为 key 时，如果找不到 value，则返回 key 作为 value，所以中文不用做配置。
