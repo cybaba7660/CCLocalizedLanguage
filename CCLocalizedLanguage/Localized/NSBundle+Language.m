@@ -17,18 +17,7 @@
     
     Method originalMethod = class_getInstanceMethod(self, originalSel);
     Method newMethod = class_getInstanceMethod(self, newSel);
-    
-    class_addMethod(self,
-                    originalSel,
-                    class_getMethodImplementation(self, originalSel),
-                    method_getTypeEncoding(originalMethod));
-    class_addMethod(self,
-                    newSel,
-                    class_getMethodImplementation(self, newSel),
-                    method_getTypeEncoding(newMethod));
-    
-    method_exchangeImplementations(class_getInstanceMethod(self, originalSel),
-                                   class_getInstanceMethod(self, newSel));
+    method_exchangeImplementations(originalMethod, newMethod);
 }
 - (NSString *)exchange_localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
     NSString *language = [LanguageManager currentLanguageName];
