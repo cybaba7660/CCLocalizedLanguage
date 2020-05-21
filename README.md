@@ -2,7 +2,7 @@
 iOS - 在 App 内优雅的切换语言
 
 ## 效果
-![效果图](/Users/admin/Desktop/屏幕录制.gif)
+![效果图](images/屏幕录制.gif)
 
 ## 集成
 
