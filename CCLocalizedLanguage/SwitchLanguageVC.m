@@ -9,6 +9,10 @@
 #import "SwitchLanguageVC.h"
 #import "LanguageManager.h"
 
+// 配置语言种类缩写和切换语言页面的语言列表（如果不知道语言名称，可以通过配置完国际化语言包后打开工程目录查看 .lproj 文件前缀）
+#define LANGUAGE_NAMES_1   @[@"zh-Hans", @"en", @"ja", @"ko", @"th"]
+#define LANGUAGE_NAMES_2   @[@"简体中文", @"English", @"日本語", @"한국어", @"ภาษาไทย"]
+
 @interface SwitchLanguageVC ()<UITableViewDelegate, UITableViewDataSource> {
     NSArray *languages;
     NSUInteger originalIndex;
@@ -103,7 +107,7 @@
             window.rootViewController = newRootVC;
             rootVC = nil;
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [newRootVC popViewControllerAnimated:YES];
             });
         });
