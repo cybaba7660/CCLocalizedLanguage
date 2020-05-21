@@ -16,7 +16,7 @@ iOS - 在 App 内优雅的切换语言
 
 ## 使用
 
-##### 1、导入 `\#import "LanguageManager.h"`
+##### 1、导入 `#import "LanguageManager.h"`
 
 ##### 2、切换语言
 
