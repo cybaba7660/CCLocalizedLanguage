@@ -2,7 +2,7 @@
 iOS - 在 App 内优雅的切换语言
 
 ## 效果
-![切换语言](images/switch language.gif)
+![image](https://github.com/cybaba7660/CCLocalizedLanguage/blob/master/images/switch%20language.gif)
 
 ## 集成
 
