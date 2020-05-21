@@ -22,19 +22,19 @@ iOS - 在 App 内优雅的切换语言
 
 ###### 指定国家语言
 
-```objective-c
+```
 [LanguageManager switchLanguage:selectedLanguage];
 ```
 
 ###### 恢复跟随系统语言
 
-```objective-c
+```
 [LanguageManager resetToSystemLanguage];
 ```
 
 ##### 3、刷新，重新指定根控制器以起到刷新所有页面的效果
 
-```objective-c
+```
 NSArray *array = UIApplication.sharedApplication.connectedScenes.allObjects;
 UIWindowScene *windowScene = array.firstObject;
 UIWindow *window = windowScene.windows.firstObject;
@@ -53,4 +53,4 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), 
         [newRootVC popViewControllerAnimated:YES];
 });
 ```
-## 文章地址 [iOS 如何优雅的集成 App 内切换多国语言功能](https://www.jianshu.com/p/ae4c064b7292)
+### 贴上文章地址：[iOS 如何优雅的集成 App 内切换多国语言功能](https://www.jianshu.com/p/ae4c064b7292)
