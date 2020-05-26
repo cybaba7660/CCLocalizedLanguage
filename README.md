@@ -2,7 +2,7 @@
 iOS - 在 App 内优雅的切换语言
 
 ## 效果
-![效果图](/Users/admin/Desktop/屏幕录制.gif)
+![image](images/language.gif)
 
 ## 集成
 
@@ -16,7 +16,7 @@ iOS - 在 App 内优雅的切换语言
 
 ## 使用
 
-##### 1、导入 `\#import "LanguageManager.h"`
+##### 1、导入 `#import "LanguageManager.h"`
 
 ##### 2、切换语言
 
@@ -53,4 +53,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), 
         [newRootVC popViewControllerAnimated:YES];
 });
 ```
-## 文章地址 [iOS 如何优雅的集成 App 内切换多国语言功能](https://www.jianshu.com/p/ae4c064b7292)
+
+#### 贴上文章地址：[iOS 如何优雅的集成 App 内切换多国语言功能](https://www.jianshu.com/p/ae4c064b7292)
+
+
