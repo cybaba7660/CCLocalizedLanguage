@@ -26,6 +26,10 @@ NSString * const kLocalizedLanguageDidChangedNotification = @"kLocalizedLanguage
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kAppleLanguages];
     return [[NSUserDefaults standardUserDefaults] synchronize];
 }
++ (BOOL)isUsedSystemLanguage {
+    NSString *lastLanguage = [[NSUserDefaults standardUserDefaults] objectForKey:kLastUsedLanguage];
+    return !lastLanguage.length;
+}
 + (BOOL)switchLanguage:(NSString *)language {
     if (!language.length) {
         return NO;

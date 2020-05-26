@@ -19,6 +19,9 @@ extern NSString * const kLocalizedLanguageDidChangedNotification;
 /// 重置使用系统语言
 + (BOOL)resetToSystemLanguage;
 
+/// 当前是否跟随的系统语言
++ (BOOL)isUsedSystemLanguage;
+
 /// 切换语言
 /// @param language 语言缩写
 + (BOOL)switchLanguage:(NSString *)language;
