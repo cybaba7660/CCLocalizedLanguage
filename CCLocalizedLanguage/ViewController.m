@@ -29,6 +29,7 @@
     [self.view addSubview:titleLabel];
     titleLabel.text = NSLocalizedString(@"语言本地化", nil);
     
+    
     UIButton *switchLanguageButton = [UIButton buttonWithType:UIButtonTypeCustom];
     switchLanguageButton.frame = CGRectMake((screenWidth - 240) / 2, (screenHeight - 50) / 2, 240, 50);
     [switchLanguageButton setBackgroundColor:UIColor.blackColor];
